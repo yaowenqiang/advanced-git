@@ -25,5 +25,18 @@ and meta data
 + filename or directory name
 + mode(executable file, symboli link, ...)
 
+Identical content is only stored once
+
+
+Other optimizations - packfiles, deltas
+
+
++ Git objects are compressed
++ As files hange, their contens remain mostly similar,
++ Git optmizes for this by compressing these files together into a packfile
++ The Packfile stores the object, and 'deltas', or the differences between one version of the file and the next
++ Packfiles are generated when
+  + You have too many objects, during gc, or during a push to a remote
+
 
 

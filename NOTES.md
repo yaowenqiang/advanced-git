@@ -38,5 +38,20 @@ Other optimizations - packfiles, deltas
 + Packfiles are generated when
   + You have too many objects, during gc, or during a push to a remote
 
+Commit Object
+
+A Commit points to 
+
++ a tree
+
+and contains metadata
+
++ author and committer
++ date
++ message
++ parent commit(one or more)
+
+References  - Pointers to commits
+
 
 

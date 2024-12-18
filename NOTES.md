@@ -54,4 +54,35 @@ and contains metadata
 References  - Pointers to commits
 
 
+git  --no-pager  log --oneline
+
+
+The working area
+
++ The files in your working area that are also not in the staging area are not handled by git
++ Also called untracked files
+
+The Staging Area(a.k.a Index, Cache)
+
++ What files are going to be part of the next commit
++ The staging area is how git knows what will change between the current and the next commit
++ Tip: a 'clean' staging area isn't empty!
++ Consider the baseline staging area as being an exact copy of last commit
+
+
+git ls-fils -s
+
+
+The repository
+
+git add -P
+
+
++ The files git knows about!
++ Contains all of your commits
+
+
+
+
+
 

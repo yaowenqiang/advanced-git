@@ -85,4 +85,9 @@ git add -P
 
 
 
+git tag
+git show-refs --tags
+git tag --points-at  <commit>
+git show <tag-name>
+
 

@@ -90,4 +90,14 @@ git show-refs --tags
 git tag --points-at  <commit>
 git show <tag-name>
 
+head-less / detached head 
+
++ Sometimes you need to checkout a specific commit ( or tag) instead of a branch
++ git moves the HEAD-pointer to that commit
++ as soon as you checkout a different branch or commit, the value of HEAD will point to the new SHA
++ There is no reference pointing to the commit you made in a detached state
+
+git show-ref --heads
+
+
 

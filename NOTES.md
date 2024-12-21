@@ -100,4 +100,25 @@ head-less / detached head
 git show-ref --heads
 
 
+Git merge - NO-FF (NO FAST FORWARD)
+
++ To remain the history of a merge commit, even if there are no changes to the base branches
++ use git merge -no-ff
++ This will force a merge commit, even when one isn't necessary
+
+Git rerere - Reuse Recorded Resolotion
+
++ git saves how you resoved a conflict
++ next conflict reuse the same resolution
++ Useful for
+  + long lived feature branch (like a refactor)
+  + rebasing
+
+turn it on:
+
++ git config rerere.enabled true
++ use --global flag to enable for all projects
+  
+
+
 
